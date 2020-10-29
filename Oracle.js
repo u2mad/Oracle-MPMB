@@ -6,6 +6,7 @@
 	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
 */
 
+
 var iFileName = "Oracle.js";
 RequiredSheetVersion(12.999);
 
@@ -50,10 +51,10 @@ ClassList["oracle"] = {
 
 	},
 	spellcastingList : {
-		// 0 - 9th level spells from cleric spell list.
-		class : "any",
+		// 0 - 9th level spells from any spell list.
+		"class" : "any",
 		level : [0, 9],
-		ritual : true,
+		ritual : false,
 	},
 
 features : { //required;  the class features. Each works the same way, so only a couple of example are given. You can add as many as you want
@@ -651,7 +652,8 @@ ClassSubList["mystery of life"] = {
 				description : "\n   " + "You gain a second pool of d8 hit dice equal to your level. During a short rest, you can use these dice to heal yourself or other creatures and they refresh as normal. At any other time you may, as a bonus action, touch a creature and expend one or more of those hit dice to heal that creature by the amount rolled + your Wisdom modifier.",
       	additional : ["d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8", "d8"],
         usages : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
-        recovery : "long rest"
+        recovery : "long rest",
+        action : ["bonus action", ""]
         },
 
 				"subclassfeature3" : {
